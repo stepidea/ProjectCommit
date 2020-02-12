@@ -25,6 +25,12 @@ $ git commit -m "提交信息"
 $ git commit  #命令执行后可以记录详细的修改信息
 ```
 
+- 添加到暂存区并保存文件到仓库
+
+```
+$ git commit -am "提交信息"
+```
+
 - 查看提交日志
 
 ```
@@ -57,7 +63,8 @@ $ git branch
 
 ```
 $ git branch feature1
-$ git checkout feature1  相当于  $ git checkout -b feature1
+$ git checkout feature1  
+相当于  $ git checkout -b feature1
 ```
 
 - 切换回上一个分支
@@ -82,5 +89,17 @@ $ git reflog
 
 ```
 $ git reset --hard xxx   #哈希值：xxx ，通过 git reflog 获取
+```
+
+- 修改上一条提交信息
+
+```
+$ git commit --amend
+```
+
+- 更改历史，将第二个pick改写为 fixup
+
+```
+$ git rebase -i HEAD~2   #选定当前分支中包含HEAD（最新提交）在内的两个最新历史记录
 ```
 
