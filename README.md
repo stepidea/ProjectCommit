@@ -31,6 +31,7 @@ $ git commit  #命令执行后可以记录详细的修改信息
 $ git log
 $ git log --pretty=short  #只显示提交信息的第一行
 $ git log README.md  #显示指定目录、文件的日志
+$ git log --graph  #以图表形式查看分支
 ```
 
 - 显示README文件的改动
@@ -50,5 +51,36 @@ $ git diff HEAD
 
 ```
 $ git branch
+```
+
+- 创建、切换分支 feature1，需要在主分支下进行执行
+
+```
+$ git branch feature1
+$ git checkout feature1  相当于  $ git checkout -b feature1
+```
+
+- 切换回上一个分支
+
+```
+$ git checkout -
+```
+
+- 合并分支，在主分支下执行
+
+```
+$ git merge --no-ff feature1
+```
+
+- 查看当前仓库的操作日志
+
+```
+$ git reflog
+```
+
+- 回溯历史版本，即回溯到指定状态；需要提供目标时间点的哈希值
+
+```
+$ git reset --hard xxx   #哈希值：xxx ，通过 git reflog 获取
 ```
 
