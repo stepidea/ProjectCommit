@@ -128,3 +128,4 @@ $ git checkout -b commitbranch origin/commitbranch
 $ git pull origin commitbranch
 ```
 
+**附加信息可以查看Wiki。**
