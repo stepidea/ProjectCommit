@@ -122,3 +122,9 @@ $ git clone 项目地址
 $ git checkout -b commitbranch origin/commitbranch
 ```
 
+- 获取最新的远程仓库分支
+
+```
+$ git pull origin commitbranch
+```
+
