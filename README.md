@@ -56,7 +56,8 @@ $ git diff HEAD
 
 
 ```
-$ git branch
+$ git branch  #显示本地仓库的分支信息
+$ git branch -a  #显示本地仓库和远程仓库的分支信息
 ```
 
 - 创建、切换分支 feature1，需要在主分支下进行执行
@@ -101,5 +102,23 @@ $ git commit --amend
 
 ```
 $ git rebase -i HEAD~2   #选定当前分支中包含HEAD（最新提交）在内的两个最新历史记录
+```
+
+- 推送至远程仓库，-u将origin仓库的 master 分支设置为本地仓库当前分支的 upstream
+
+```
+$ git push -u origin master
+```
+
+- 获取远程仓库
+
+```
+$ git clone 项目地址
+```
+
+- 获取远程仓库以名为 origin 的仓库的 commitbranch 分支
+
+```
+$ git checkout -b commitbranch origin/commitbranch
 ```
 
