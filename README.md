@@ -40,7 +40,7 @@ $ git log README.md  #显示指定目录、文件的日志
 $ git log --graph  #以图表形式查看分支
 ```
 
-- 显示README文件的改动
+- 显示README文件的改动，输入q进行退出
 
 ```
 $ git log -p README.md
