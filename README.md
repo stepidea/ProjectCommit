@@ -130,7 +130,16 @@ $ git checkout -b commitbranch origin/commitbranch
 $ git pull origin commitbranch
 ```
 
+- 给原仓库设置远程仓库
 
 
+```
+$ git remote add upstream 项目地址
+```
 
+- 获取最新数据，合并更新
+
+```
+$ git fetch upstream
+```
 
