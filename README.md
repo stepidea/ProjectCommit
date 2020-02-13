@@ -1,3 +1,5 @@
+**附加信息可以查看Wiki;GitHub的GUI客户端可以使用SourceTree或官方软件。**
+
 ## Git操作
 
 - 初始化仓库，生成 的.git 目录里存储着管理当前目录内容所需的仓库数据，其内容被称为“附属于该仓库的工作树”。
@@ -127,4 +129,8 @@ $ git checkout -b commitbranch origin/commitbranch
 ```
 $ git pull origin commitbranch
 ```
+
+
+
+
 
