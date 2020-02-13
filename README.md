@@ -1,4 +1,4 @@
-**附加信息可以查看Wiki。**
+**附加信息可以查看Wiki;GitHub的GUI客户端可以使用SourceTree或官方软件。**
 
 ## Git操作
 
